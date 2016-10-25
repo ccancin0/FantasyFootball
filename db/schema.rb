@@ -9,7 +9,18 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
-do
+
+ActiveRecord::Schema.define(version: 20161024235829) do
+
+  create_table "players", force: :cascade do |t|
+    t.string   "name"
+    t.boolean  "injured"
+    t.boolean  "sick"
+    t.boolean  "suspended"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "stats", force: :cascade do |t|
     t.integer  "passingYards"
     t.integer  "rushingYards"
@@ -22,12 +33,6 @@ do
     t.integer  "sacks"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
-  end
-
-  create_table "tests", force: :cascade do |t|
-    t.string   "t"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end
