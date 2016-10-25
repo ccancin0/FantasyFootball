@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>League Profiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profilename</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @league_profiles.each do |league_profile| %>
+      <tr>
+        <td><%= league_profile.profileName %></td>
+        <td><%= link_to 'Show', league_profile %></td>
+        <td><%= link_to 'Edit', edit_league_profile_path(league_profile) %></td>
+        <td><%= link_to 'Destroy', league_profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New League Profile', new_league_profile_path %>

@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :roster_systems
-  resources :scoring_systems
+  resources :leagues
+  resources :league_profiles
+  resources :teams
   resources :players
   resources :stats
 	get '/ffootball', to: 'static_pages#ffootball', as: 'ffootball'
