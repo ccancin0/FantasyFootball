@@ -9,7 +9,25 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
+do
+  create_table "stats", force: :cascade do |t|
+    t.integer  "passingYards"
+    t.integer  "rushingYards"
+    t.integer  "receptions"
+    t.integer  "touchdowns"
+    t.integer  "touchdownPasses"
+    t.integer  "intercepts_fumbles"
+    t.integer  "extraPoints"
+    t.integer  "turnovers"
+    t.integer  "sacks"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
-ActiveRecord::Schema.define(version: 0) do
+  create_table "tests", force: :cascade do |t|
+    t.string   "t"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

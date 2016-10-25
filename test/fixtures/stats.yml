@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  passingYards: 1
+  rushingYards: 1
+  receptions: 1
+  touchdowns: 1
+  touchdownPasses: 1
+  intercepts_fumbles: 1
+  extraPoints: 1
+  turnovers: 1
+  sacks: 1
+
+two:
+  passingYards: 1
+  rushingYards: 1
+  receptions: 1
+  touchdowns: 1
+  touchdownPasses: 1
+  intercepts_fumbles: 1
+  extraPoints: 1
+  turnovers: 1
+  sacks: 1

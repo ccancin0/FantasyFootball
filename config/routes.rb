@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :players
+  resources :stats
 	get '/ffootball', to: 'static_pages#ffootball', as: 'ffootball'
 
 	# Set the default page for the web app
