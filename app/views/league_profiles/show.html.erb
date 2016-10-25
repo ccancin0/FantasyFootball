@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Profilename:</strong>
+  <%= @league_profile.profileName %>
+</p>
+
+<%= link_to 'Edit', edit_league_profile_path(@league_profile) %> |
+<%= link_to 'Back', league_profiles_path %>

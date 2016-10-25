@@ -1,0 +1,22 @@
+<%= form_for(league_profile) do |f| %>
+  <% if league_profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(league_profile.errors.count, "error") %> prohibited this league_profile from being saved:</h2>
+
+      <ul>
+      <% league_profile.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :profileName %>
+    <%= f.text_field :profileName %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

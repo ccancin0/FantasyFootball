@@ -1,0 +1,1 @@
+json.partial! "league_profiles/league_profile", league_profile: @league_profile
