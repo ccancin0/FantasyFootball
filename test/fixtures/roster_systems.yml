@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  numQuarterBacks: 1
+  numRunningBacks: 1
+  numWideReceivers: 1
+  numTightEnds: 1
+  numPlaceKickers: 1
+  numSpecialTeams: 1
+  numBench: 1
+
+two:
+  name: MyString
+  numQuarterBacks: 1
+  numRunningBacks: 1
+  numWideReceivers: 1
+  numTightEnds: 1
+  numPlaceKickers: 1
+  numSpecialTeams: 1
+  numBench: 1

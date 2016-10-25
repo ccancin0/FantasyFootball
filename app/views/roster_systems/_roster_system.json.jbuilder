@@ -1,0 +1,2 @@
+json.extract! roster_system, :id, :name, :numQuarterBacks, :numRunningBacks, :numWideReceivers, :numTightEnds, :numPlaceKickers, :numSpecialTeams, :numBench, :created_at, :updated_at
+json.url roster_system_url(roster_system, format: :json)

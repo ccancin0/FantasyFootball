@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  ptsPassing: 1.5
+  ptsRushing: 1.5
+  ptsReceiving: 1.5
+  ptsTD: 1.5
+  ptsTDPass: 1.5
+  ptslnterceptFumble: 1.5
+  ptsExtraPoint: 1.5
+  ptsTurnover: 1.5
+  ptsSack: 1.5
+  ptsSafety: 1.5
+  ptsBlockedKick: 1.5
+
+two:
+  name: MyString
+  ptsPassing: 1.5
+  ptsRushing: 1.5
+  ptsReceiving: 1.5
+  ptsTD: 1.5
+  ptsTDPass: 1.5
+  ptslnterceptFumble: 1.5
+  ptsExtraPoint: 1.5
+  ptsTurnover: 1.5
+  ptsSack: 1.5
+  ptsSafety: 1.5
+  ptsBlockedKick: 1.5

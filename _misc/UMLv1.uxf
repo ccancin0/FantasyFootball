@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>560</y>
+      <x>0</x>
+      <y>430</y>
       <w>290</w>
       <h>120</h>
     </coordinates>
@@ -23,28 +23,28 @@ available(): boolean //injured,sick,suspended
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1590</x>
-      <y>210</y>
+      <x>1520</x>
+      <y>80</y>
       <w>260</w>
       <h>320</h>
     </coordinates>
     <panel_attributes>ScoringSystem 
 --
-name:string 
-ptsPassing:double 
-ptsRushing:double 
-ptsReceiving:double 
-ptsTD:double 
-ptsTDPass:double 
-ptslnterceptFumble:double 
-ptsExtraPoint:double 
-ptsTurnover:double 
-ptsSack:double 
-ptsSafety:double 
-ptsBlockedKick:double 
+name:string
+ptsPassing:float
+ptsRushing:float
+ptsReceiving:float
+ptsTD:float
+ptsTDPass:float
+ptslnterceptFumble:float
+ptsExtraPoint:float
+ptsTurnover:float
+ptsSack:float
+ptsSafety:float
+ptsBlockedKick:float
 --
-ptsFiedGoal(int yards): int 
-score(Stats playerStats): int 
+ptsFiedGoal(int yards): integer
+score(Stats playerStats): integer
 --
 Responsibilities 
 —determine the scoring of teams 
@@ -54,8 +54,8 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
-      <y>310</y>
+      <x>280</x>
+      <y>180</y>
       <w>120</w>
       <h>140</h>
     </coordinates>
@@ -75,29 +75,29 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>270</y>
+      <x>0</x>
+      <y>140</y>
       <w>180</w>
       <h>180</h>
     </coordinates>
     <panel_attributes>Stat
 --
-passingYards:int 
-rushingYards:int 
-receptions:int 
-touchdowns:int 
-touchdownPasses:double 
-intercepts_fumbles:double 
-extrapoints:double 
-turnovers:double 
-sacks:double </panel_attributes>
+passingYards:integer
+rushingYards:integer
+receptions:integer
+touchdowns:integer
+touchdownPasses:integer
+intercepts_fumbles:integer
+extrapoints:integer
+turnovers:integer
+sacks:integer</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>650</x>
-      <y>280</y>
+      <x>580</x>
+      <y>150</y>
       <w>270</w>
       <h>190</h>
     </coordinates>
@@ -121,8 +121,8 @@ bg=pink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>800</x>
-      <y>530</y>
+      <x>730</x>
+      <y>400</y>
       <w>120</w>
       <h>60</h>
     </coordinates>
@@ -134,8 +134,8 @@ name:string </panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>520</x>
-      <y>590</y>
+      <x>450</x>
+      <y>460</y>
       <w>90</w>
       <h>80</h>
     </coordinates>
@@ -151,8 +151,8 @@ name:string
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1590</x>
-      <y>550</y>
+      <x>1520</x>
+      <y>420</y>
       <w>240</w>
       <h>230</h>
     </coordinates>
@@ -176,8 +176,8 @@ players for various positions </panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1180</x>
-      <y>490</y>
+      <x>1110</x>
+      <y>360</y>
       <w>220</w>
       <h>120</h>
     </coordinates>
@@ -197,8 +197,8 @@ and Scoring System.
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>800</x>
-      <y>890</y>
+      <x>730</x>
+      <y>760</y>
       <w>120</w>
       <h>120</h>
     </coordinates>
@@ -215,8 +215,8 @@ password:string
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1100</x>
-      <y>930</y>
+      <x>1030</x>
+      <y>800</y>
       <w>110</w>
       <h>80</h>
     </coordinates>
@@ -231,8 +231,8 @@ eMail:string
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1390</x>
-      <y>440</y>
+      <x>1320</x>
+      <y>310</y>
       <w>220</w>
       <h>100</h>
     </coordinates>
@@ -245,8 +245,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1390</x>
-      <y>570</y>
+      <x>1320</x>
+      <y>440</y>
       <w>220</w>
       <h>80</h>
     </coordinates>
@@ -259,8 +259,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>540</y>
+      <x>840</x>
+      <y>410</y>
       <w>290</w>
       <h>50</h>
     </coordinates>
@@ -273,8 +273,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>530</y>
+      <x>530</x>
+      <y>400</y>
       <w>220</w>
       <h>90</h>
     </coordinates>
@@ -287,8 +287,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>940</y>
+      <x>840</x>
+      <y>810</y>
       <w>210</w>
       <h>50</h>
     </coordinates>
@@ -301,8 +301,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>900</x>
-      <y>770</y>
+      <x>830</x>
+      <y>640</y>
       <w>90</w>
       <h>140</h>
     </coordinates>
@@ -315,8 +315,8 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>800</x>
-      <y>720</y>
+      <x>730</x>
+      <y>590</y>
       <w>120</w>
       <h>60</h>
     </coordinates>
@@ -332,8 +332,8 @@ name:string
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>900</x>
-      <y>580</y>
+      <x>830</x>
+      <y>450</y>
       <w>90</w>
       <h>160</h>
     </coordinates>
@@ -346,8 +346,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>800</x>
-      <y>770</y>
+      <x>730</x>
+      <y>640</y>
       <w>100</w>
       <h>140</h>
     </coordinates>
@@ -360,8 +360,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>800</x>
-      <y>580</y>
+      <x>730</x>
+      <y>450</y>
       <w>100</w>
       <h>160</h>
     </coordinates>
@@ -374,8 +374,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>590</x>
-      <y>660</y>
+      <x>520</x>
+      <y>530</y>
       <w>230</w>
       <h>90</h>
     </coordinates>
@@ -388,8 +388,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>660</y>
+      <x>450</x>
+      <y>530</y>
       <w>300</w>
       <h>130</h>
     </coordinates>
@@ -402,8 +402,8 @@ m2=1</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1090</x>
-      <y>700</y>
+      <x>930</x>
+      <y>570</y>
       <w>280</w>
       <h>70</h>
     </coordinates>
@@ -416,8 +416,8 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>570</y>
+      <x>530</x>
+      <y>440</y>
       <w>220</w>
       <h>90</h>
     </coordinates>
@@ -430,8 +430,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
-      <y>600</y>
+      <x>280</x>
+      <y>470</y>
       <w>190</w>
       <h>50</h>
     </coordinates>
@@ -444,8 +444,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>220</x>
-      <y>440</y>
+      <x>150</x>
+      <y>310</y>
       <w>80</w>
       <h>140</h>
     </coordinates>
@@ -458,8 +458,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>100</x>
-      <y>440</y>
+      <x>30</x>
+      <y>310</y>
       <w>100</w>
       <h>140</h>
     </coordinates>
@@ -472,8 +472,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>290</x>
-      <y>440</y>
+      <x>220</x>
+      <y>310</y>
       <w>130</w>
       <h>140</h>
     </coordinates>
@@ -486,8 +486,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>980</y>
+      <x>840</x>
+      <y>850</y>
       <w>210</w>
       <h>50</h>
     </coordinates>

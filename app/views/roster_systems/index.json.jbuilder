@@ -1,0 +1,1 @@
+json.array! @roster_systems, partial: 'roster_systems/roster_system', as: :roster_system
