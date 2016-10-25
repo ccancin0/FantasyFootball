@@ -1,0 +1,2 @@
+json.extract! stat, :id, :passingYards, :rushingYards, :receptions, :touchdowns, :touchdownPasses, :intercepts_fumbles, :extraPoints, :turnovers, :sacks, :created_at, :updated_at
+json.url stat_url(stat, format: :json)

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Passingyards:</strong>
+  <%= @stat.passingYards %>
+</p>
+
+<p>
+  <strong>Rushingyards:</strong>
+  <%= @stat.rushingYards %>
+</p>
+
+<p>
+  <strong>Receptions:</strong>
+  <%= @stat.receptions %>
+</p>
+
+<p>
+  <strong>Touchdowns:</strong>
+  <%= @stat.touchdowns %>
+</p>
+
+<p>
+  <strong>Touchdownpasses:</strong>
+  <%= @stat.touchdownPasses %>
+</p>
+
+<p>
+  <strong>Intercepts fumbles:</strong>
+  <%= @stat.intercepts_fumbles %>
+</p>
+
+<p>
+  <strong>Extrapoints:</strong>
+  <%= @stat.extraPoints %>
+</p>
+
+<p>
+  <strong>Turnovers:</strong>
+  <%= @stat.turnovers %>
+</p>
+
+<p>
+  <strong>Sacks:</strong>
+  <%= @stat.sacks %>
+</p>
+
+<%= link_to 'Edit', edit_stat_path(@stat) %> |
+<%= link_to 'Back', stats_path %>

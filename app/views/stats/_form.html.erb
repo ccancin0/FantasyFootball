@@ -1,0 +1,62 @@
+<%= form_for(stat) do |f| %>
+  <% if stat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(stat.errors.count, "error") %> prohibited this stat from being saved:</h2>
+
+      <ul>
+      <% stat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :passingYards %>
+    <%= f.number_field :passingYards %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rushingYards %>
+    <%= f.number_field :rushingYards %>
+  </div>
+
+  <div class="field">
+    <%= f.label :receptions %>
+    <%= f.number_field :receptions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :touchdowns %>
+    <%= f.number_field :touchdowns %>
+  </div>
+
+  <div class="field">
+    <%= f.label :touchdownPasses %>
+    <%= f.number_field :touchdownPasses %>
+  </div>
+
+  <div class="field">
+    <%= f.label :intercepts_fumbles %>
+    <%= f.number_field :intercepts_fumbles %>
+  </div>
+
+  <div class="field">
+    <%= f.label :extraPoints %>
+    <%= f.number_field :extraPoints %>
+  </div>
+
+  <div class="field">
+    <%= f.label :turnovers %>
+    <%= f.number_field :turnovers %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sacks %>
+    <%= f.number_field :sacks %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
