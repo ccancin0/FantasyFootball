@@ -1,7 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  profileName: MyString
+  profileName: MyTeamNameisdjfhjkdshjkfhsdjkhfkjsdhjkfhsjdhfjksdfds
 
 two:
-  profileName: MyString
+  profileName: MyTeamName
+
+three:
+  profileName: ''
+
+four:
+  profileName:
+
+
