@@ -1,0 +1,1 @@
+json.partial! "scoring_systems/scoring_system", scoring_system: @scoring_system

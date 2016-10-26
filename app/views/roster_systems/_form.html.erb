@@ -1,0 +1,57 @@
+<%= form_for(roster_system) do |f| %>
+  <% if roster_system.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(roster_system.errors.count, "error") %> prohibited this roster_system from being saved:</h2>
+
+      <ul>
+      <% roster_system.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numQuarterBacks %>
+    <%= f.number_field :numQuarterBacks %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numRunningBacks %>
+    <%= f.number_field :numRunningBacks %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numWideReceivers %>
+    <%= f.number_field :numWideReceivers %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numTightEnds %>
+    <%= f.number_field :numTightEnds %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numPlaceKickers %>
+    <%= f.number_field :numPlaceKickers %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numSpecialTeams %>
+    <%= f.number_field :numSpecialTeams %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numBench %>
+    <%= f.number_field :numBench %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+json.extract! scoring_system, :id, :name, :ptsPassing, :ptsRushing, :ptsReceiving, :ptsTD, :ptsTDPass, :ptslnterceptFumble, :ptsExtraPoint, :ptsTurnover, :ptsSack, :ptsSafety, :ptsBlockedKick, :created_at, :updated_at
+json.url scoring_system_url(scoring_system, format: :json)

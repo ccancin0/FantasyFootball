@@ -1,0 +1,1 @@
+json.partial! "roster_systems/roster_system", roster_system: @roster_system
