@@ -1,0 +1,77 @@
+<%= form_for(scoring_system) do |f| %>
+  <% if scoring_system.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(scoring_system.errors.count, "error") %> prohibited this scoring_system from being saved:</h2>
+
+      <ul>
+      <% scoring_system.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptsPassing %>
+    <%= f.text_field :ptsPassing %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptsRushing %>
+    <%= f.text_field :ptsRushing %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptsReceiving %>
+    <%= f.text_field :ptsReceiving %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptsTD %>
+    <%= f.text_field :ptsTD %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptsTDPass %>
+    <%= f.text_field :ptsTDPass %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptslnterceptFumble %>
+    <%= f.text_field :ptslnterceptFumble %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptsExtraPoint %>
+    <%= f.text_field :ptsExtraPoint %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptsTurnover %>
+    <%= f.text_field :ptsTurnover %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptsSack %>
+    <%= f.text_field :ptsSack %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptsSafety %>
+    <%= f.text_field :ptsSafety %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ptsBlockedKick %>
+    <%= f.text_field :ptsBlockedKick %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

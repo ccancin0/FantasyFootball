@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  teamName: MyTeamNameisfkjdshfkjsdhkjfhkjsdhjfhkjsdjkhfs
+
+two:
+  teamName: MyTeamName
+
+three:
+  teamName: ''
+
+four:
+  teamName: 
+
+five:
+  teamName: MyTeamName
+

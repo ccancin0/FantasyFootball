@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @roster_system.name %>
+</p>
+
+<p>
+  <strong>Numquarterbacks:</strong>
+  <%= @roster_system.numQuarterBacks %>
+</p>
+
+<p>
+  <strong>Numrunningbacks:</strong>
+  <%= @roster_system.numRunningBacks %>
+</p>
+
+<p>
+  <strong>Numwidereceivers:</strong>
+  <%= @roster_system.numWideReceivers %>
+</p>
+
+<p>
+  <strong>Numtightends:</strong>
+  <%= @roster_system.numTightEnds %>
+</p>
+
+<p>
+  <strong>Numplacekickers:</strong>
+  <%= @roster_system.numPlaceKickers %>
+</p>
+
+<p>
+  <strong>Numspecialteams:</strong>
+  <%= @roster_system.numSpecialTeams %>
+</p>
+
+<p>
+  <strong>Numbench:</strong>
+  <%= @roster_system.numBench %>
+</p>
+
+<%= link_to 'Edit', edit_roster_system_path(@roster_system) %> |
+<%= link_to 'Back', roster_systems_path %>

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Scoring Systems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Ptspassing</th>
+      <th>Ptsrushing</th>
+      <th>Ptsreceiving</th>
+      <th>Ptstd</th>
+      <th>Ptstdpass</th>
+      <th>Ptslnterceptfumble</th>
+      <th>Ptsextrapoint</th>
+      <th>Ptsturnover</th>
+      <th>Ptssack</th>
+      <th>Ptssafety</th>
+      <th>Ptsblockedkick</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scoring_systems.each do |scoring_system| %>
+      <tr>
+        <td><%= scoring_system.name %></td>
+        <td><%= scoring_system.ptsPassing %></td>
+        <td><%= scoring_system.ptsRushing %></td>
+        <td><%= scoring_system.ptsReceiving %></td>
+        <td><%= scoring_system.ptsTD %></td>
+        <td><%= scoring_system.ptsTDPass %></td>
+        <td><%= scoring_system.ptslnterceptFumble %></td>
+        <td><%= scoring_system.ptsExtraPoint %></td>
+        <td><%= scoring_system.ptsTurnover %></td>
+        <td><%= scoring_system.ptsSack %></td>
+        <td><%= scoring_system.ptsSafety %></td>
+        <td><%= scoring_system.ptsBlockedKick %></td>
+        <td><%= link_to 'Show', scoring_system %></td>
+        <td><%= link_to 'Edit', edit_scoring_system_path(scoring_system) %></td>
+        <td><%= link_to 'Destroy', scoring_system, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Scoring System', new_scoring_system_path %>

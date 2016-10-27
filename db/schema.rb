@@ -10,7 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161024213013) do
+ActiveRecord::Schema.define(version: 20161025232701) do
+
+  create_table "league_profiles", force: :cascade do |t|
+    t.string   "profileName"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "team_id"
+    t.integer  "league_id"
+    t.index ["league_id"], name: "index_league_profiles_on_league_id"
+    t.index ["team_id"], name: "index_league_profiles_on_team_id"
+  end
+
+  create_table "leagues", force: :cascade do |t|
+    t.string   "leagueName"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "players", force: :cascade do |t|
+    t.string   "name"
+    t.boolean  "injured"
+    t.boolean  "sick"
+    t.boolean  "suspended"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "team_id"
+    t.index ["team_id"], name: "index_players_on_team_id"
+  end
 
   create_table "stats", force: :cascade do |t|
     t.integer  "passingYards"
@@ -24,12 +51,16 @@ ActiveRecord::Schema.define(version: 20161024213013) do
     t.integer  "sacks"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+    t.integer  "player_id"
+    t.index ["player_id"], name: "index_stats_on_player_id"
   end
 
-  create_table "tests", force: :cascade do |t|
-    t.string   "t"
+  create_table "teams", force: :cascade do |t|
+    t.string   "teamName"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "league_id"
+    t.index ["league_id"], name: "index_teams_on_league_id"
   end
 
 end

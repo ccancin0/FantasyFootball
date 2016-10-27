@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Roster Systems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Numquarterbacks</th>
+      <th>Numrunningbacks</th>
+      <th>Numwidereceivers</th>
+      <th>Numtightends</th>
+      <th>Numplacekickers</th>
+      <th>Numspecialteams</th>
+      <th>Numbench</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @roster_systems.each do |roster_system| %>
+      <tr>
+        <td><%= roster_system.name %></td>
+        <td><%= roster_system.numQuarterBacks %></td>
+        <td><%= roster_system.numRunningBacks %></td>
+        <td><%= roster_system.numWideReceivers %></td>
+        <td><%= roster_system.numTightEnds %></td>
+        <td><%= roster_system.numPlaceKickers %></td>
+        <td><%= roster_system.numSpecialTeams %></td>
+        <td><%= roster_system.numBench %></td>
+        <td><%= link_to 'Show', roster_system %></td>
+        <td><%= link_to 'Edit', edit_roster_system_path(roster_system) %></td>
+        <td><%= link_to 'Destroy', roster_system, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Roster System', new_roster_system_path %>
