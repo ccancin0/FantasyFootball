@@ -39,6 +39,36 @@ ActiveRecord::Schema.define(version: 20161025232701) do
     t.index ["team_id"], name: "index_players_on_team_id"
   end
 
+  create_table "roster_systems", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "numQuarterBacks"
+    t.integer  "numRunningBacks"
+    t.integer  "numWideReceivers"
+    t.integer  "numTightEnds"
+    t.integer  "numPlaceKickers"
+    t.integer  "numSpecialTeams"
+    t.integer  "numBench"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "scoring_systems", force: :cascade do |t|
+    t.string   "name"
+    t.float    "ptsPassing"
+    t.float    "ptsRushing"
+    t.float    "ptsReceiving"
+    t.float    "ptsTD"
+    t.float    "ptsTDPass"
+    t.float    "ptslnterceptFumble"
+    t.float    "ptsExtraPoint"
+    t.float    "ptsTurnover"
+    t.float    "ptsSack"
+    t.float    "ptsSafety"
+    t.float    "ptsBlockedKick"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
   create_table "stats", force: :cascade do |t|
     t.integer  "passingYards"
     t.integer  "rushingYards"

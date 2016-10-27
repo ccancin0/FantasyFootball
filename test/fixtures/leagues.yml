@@ -1,3 +1,14 @@
+# == Schema Information
+# Schema version: 20161025232701
+#
+# Table name: leagues
+#
+#  id         :integer          not null, primary key
+#  leagueName :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:

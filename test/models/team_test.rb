@@ -1,3 +1,15 @@
+# == Schema Information
+# Schema version: 20161025232701
+#
+# Table name: teams
+#
+#  id         :integer          not null, primary key
+#  teamName   :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  league_id  :integer
+#
+
 require 'test_helper'
 
 class TeamTest < ActiveSupport::TestCase

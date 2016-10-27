@@ -1,3 +1,16 @@
+# == Schema Information
+# Schema version: 20161025232701
+#
+# Table name: league_profiles
+#
+#  id          :integer          not null, primary key
+#  profileName :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  team_id     :integer
+#  league_id   :integer
+#
+
 require 'test_helper'
 
 class LeagueProfileTest < ActiveSupport::TestCase
